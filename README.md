@@ -1,12 +1,13 @@
 # Spring Boot Foundation
 
-Personal knowledge base and reference project for learning Spring Boot fundamentals.
+Personal knowledge base and practice project for learning Spring Boot fundamentals.
 
-## Repository Structure
+## Structure
 
-.
-├── README.md
-├── concepts
+```text
+springboot-foundation/
+│
+├── concepts/
 │   ├── spring-boot.md
 │   ├── maven.md
 │   ├── dependency-injection.md
@@ -14,44 +15,107 @@ Personal knowledge base and reference project for learning Spring Boot fundament
 │   ├── validation.md
 │   ├── exception-handling.md
 │   ├── logging.md
-│   ├── testing.md
-│   └── profiles.md
+│   ├── profiles.md
+│   └── testing.md
 │
-├── examples
-│   ├── health-endpoint.md
-│   ├── validation-example.md
-│   └── error-handling-example.md
+├── labs/
+│   ├── spring-boot-lab.md
+│   ├── dependency-injection-lab.md
+│   └── ...
 │
-└── product-service
-    └── Spring Boot project
+├── examples/
+│   └── implementation examples
+│
+└── product-service/
+    └── Spring Boot application
+```
 
-## Learning Path
+## How I Learn
+
+For each topic:
+
+1. Read the concept.
+2. Complete the lab.
+3. Implement it in the project.
+4. Save useful examples.
+
+Example:
+
+```text
+concepts/spring-boot.md
+        ↓
+labs/spring-boot-lab.md
+        ↓
+product-service/
+        ↓
+examples/
+```
+
+## Topics
 
 ### Foundation
+
 - Spring Boot
 - Maven
-- Project Structure
 
-### Core Backend Development
+### Core Development
+
 - Dependency Injection
 - REST APIs
 - Validation
-- Error Handling
+- Exception Handling
 - Logging
 
-### Application Configuration
+### Configuration
+
 - Profiles
-- Properties
 
 ### Quality
+
 - Testing
 
-### Comparison
-- FastAPI
+## Project
 
-## Quick Reference
+The practical application used throughout the repository.
 
-### Run Application
+Planned endpoints:
+
+```text
+GET /health
+GET /products
+POST /products
+```
+
+## Commands
+
+Run application:
 
 ```bash
 mvn spring-boot:run
+```
+
+Run tests:
+
+```bash
+mvn test
+```
+
+Build application:
+
+```bash
+mvn package
+```
+
+## Goal
+
+By the end of this repository I should be able to:
+
+- Understand Spring Boot fundamentals
+- Build REST APIs
+- Configure applications
+- Use Dependency Injection
+- Validate requests
+- Handle exceptions
+- Add logging
+- Write tests
+- Explain Spring Boot concepts confidently
